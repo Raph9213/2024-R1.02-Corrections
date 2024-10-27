@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TP7 - Exercice 1</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.3.3/cyborg/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container"></div>
+            <h1>Paramètres de confidentialité</h1>
+            <div class="row mt-5">
+                <div class="col">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#configModal">
+                        Configurer
+                    </button>
+                </div>
+            </div>
+            <div class="modal fade" id="configModal" tabindex="-1" aria-labelledby="configModalLabel"
+            aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form method="post" action="http://localhost/response.php">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="configModalLabel">Paramètres de confidentialité</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Nous stockons et utilisons des informations non sensibles sur votre appareil pour les
+                                finalités suivantes :
+                                mesure d'audiance, interaction avec les réseaux sociaux et l'affichage de publicités
+                                cibliées par profilage.</p>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="cookieBox">
+                                        Cookies de fonctionnement
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" name="cookies" id="cookieBox" required>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="mesureBox">
+                                        Mesure d'audience et web-analyse
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" name="mesure" id="mesureBox">
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="socialBox">
+                                        Activation des réseaux sociaux
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" name="social" id="socialBox">
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="adBox">
+                                        Publicité ciblée par profilage
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" name="ad" id="adBox">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

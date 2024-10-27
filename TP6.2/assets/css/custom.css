@@ -1,0 +1,16 @@
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    position: absolute;
+    background-color: rgba(220, 57, 57, .5);
+    width: 0;
+    content: "";
+    height: 20px;
+    transition: width 0.3s;
+}
+
+.nav-item:hover:has(:not(.disabled))::after {
+    width: 100%;
+}

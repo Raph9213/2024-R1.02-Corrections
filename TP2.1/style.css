@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    font-size: 2em;
+}
+
+footer p {
+    font-family: 'Lucida Grande', sans-serif;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.souligne h2 {
+    text-decoration: underline;
+}
+
+.barre h2 {
+    text-decoration: overline;
+}
+
+p {
+    font-family: 'Monotype Corsiva', cursive;
+}
+
+.centre, .barre > .centre {
+    text-align: center;
+}
+
+.barre p, .souligne {
+    font-size: 1.2em;
+}
+
+.barre p {
+    text-align: right;
+}
+
+p.consigne {
+    font-family: Braggadocio, fantasy;
+    text-align: left;
+}

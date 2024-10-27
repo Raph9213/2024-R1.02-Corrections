@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans:wght@100..900&display=swap');
+
+html {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+}
+
+body > ol {
+    list-style-type: lower-greek;
+}
+
+dt {
+    font-weight: bolder;
+    font-variant: small-caps;
+}
+
+dd {
+    font-style: italic;
+}
+
+body > ol > li {
+    font-size: 2rem;
+}
+
+li li {
+    font-size: 1rem;
+}
+
+.li-title > ol > li::first-letter {
+    font-size: 4rem;
+    color: crimson;
+}
+
+@counter-style country-flags {
+    system: fixed;
+    symbols: ;
+    suffix: " ";
+}
+
+.li-title:last-child li {
+    list-style-type: country-flags;
+    border-left: 3px dashed aquamarine;
+    list-style-position: inside;
+}

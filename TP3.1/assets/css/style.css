@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans:wght@100..900&display=swap');
+
+body {
+    font-size: 30px;
+}
+
+nav span {
+    background-color: #ddd;
+    margin: 0 0.25em;
+    padding: 0.5em;
+}
+
+nav {
+    background-color: hsl(192, 69%, 15%);
+    color: hsl(192, 69%, 15%);
+}
+
+img {
+    margin: .5em;
+    border-radius: 10% 0 10% 0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.img-portrait {
+    height: 800px;
+    width: 600px;
+}
+
+.img-paysage {
+    width: 800px;
+    height: 600px;
+}
+
+#un {
+    background-color: #EBF7D4;
+}
+
+#deux {
+    background-color: #98CA32;
+}
+
+#trois {
+    background-color: #D61A46;
+}
+
+#quatre {
+    background-color: #B8143A;
+}
+
+.images {
+    width: 200px;
+    height: 200px;
+    color: #340913;
+    border: 15px dotted currentColor;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h2, p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 3px dashed coral;
+}
+
+p {
+    font-size: 1rem;
+}
